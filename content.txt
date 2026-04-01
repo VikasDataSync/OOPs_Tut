@@ -1,0 +1,24 @@
+1. class and objects
+
+class have 2 things 
+1. Data attributes -> Name,ID,Salary etc
+2. Function -> Report,Presentation,Travel
+
+-- object is instance of class
+object can access 2 things
+1. Data Members
+2. Methods/Function
+
+
+2. def __init__(self) : -> this is how a constructor is called 
+purpose of constructor -> assign value to data members of the class and perform intialization of an object attributes
+
+3. why python is called an OOPs
+all data types in python are objects
+and all the objects have their own methods 
+
+4. Advantages of OOPs
+    - you can create your own datatype
+    - code reusablity
+    - debugging
+    - easy to collab
