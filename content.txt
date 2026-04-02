@@ -22,3 +22,6 @@ and all the objects have their own methods
     - code reusablity
     - debugging
     - easy to collab
+
+5. You can import a class from other file 
+This feature is called modulation -> module of one python file can be imported in other file 
