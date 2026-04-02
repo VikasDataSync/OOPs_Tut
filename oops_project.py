@@ -1,10 +1,31 @@
 class chatbook:
+    __user_id=0 # class variable to keep track of user id and it is private variable as well
     def __init__(self):
+        self.id=chatbook.__user_id # assigning value of class variable to instance variable
+        chatbook.__user_id+=1      # incrementing class variable by 1 for next user
+        self.__name="Default Name" # private variable
         self.username=""
         self.password=""
         self.loggedin=False
-        self.menu()
+        # self.menu()
         
+    # getter and setter methods to access private variable    
+    def get_name(self): # getter method to access private variable
+        return self.__name
+        
+    def set_name(self,value): # setter method to set value to private variable
+        self.__name=value
+
+    @staticmethod
+    def get_id():
+        return chatbook.__user_id
+    
+    @staticmethod
+    def set_id(val):
+        chatbook.__user_id=val
+    
+    
+    
     def menu(self):
         user_input=input("""Welcome to Chatbook !! How would you like to proceed ? 
                          1. Press 1 to signup
@@ -66,6 +87,5 @@ class chatbook:
             print("\n")
             self.menu()
             
-    
-user1=chatbook()
+
 

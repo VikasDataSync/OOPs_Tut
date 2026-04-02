@@ -25,3 +25,33 @@ and all the objects have their own methods
 
 5. You can import a class from other file 
 This feature is called modulation -> module of one python file can be imported in other file 
+
+6. Method vs Function
+Method belongs to a Class and used via dot(.) operator like -> employee.calculateSalary()
+while a function is used for general task like -> sum(4,7)
+
+
+-> self concept 
+id(object)-> this will return the memory address of that particular object
+print("ID of user1:", id(user1))        ->122344 
+print("ID of this object:", id(self))   ->122344  
+both the memory address are same  means both the user1 and self are same object 
+
+You can also create attributes outside class as well
+like this 
+user.name="my_name"
+print(user.name) -> my_name as output
+
+
+-> Hidden/Private Data Member in Class
+how to create it -> self.__name="AnyName"
+double underline is used to create a Hidden Data attributes
+How to acces the hidden attributes
+ObjectName._classname__variablename -> print(obj._notebook_name)
+
+-> getter and setter are function which are used to acces and modify the private data members
+ def get_name(self):  
+        return self.__name
+        
+    def set_name(self,value): # setter method to set value to private variable
+        self.__name=value
