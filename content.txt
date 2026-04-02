@@ -55,3 +55,22 @@ ObjectName._classname__variablename -> print(obj._notebook_name)
         
     def set_name(self,value): # setter method to set value to private variable
         self.__name=value
+
+-> static method
+used to set/modify the value of "class" variable 
+@staticmethod
+    def get_id():
+        return chatbook.__user_id
+    
+    @staticmethod
+    def set_id(val):
+        chatbook.__user_id=val
+
+
+6. Inheritance
+> Inheritance code example
+> Why Inheritance is needed ? (code reusablity, parent has no acces to child class)
+> what get inherited ? - constructor, Non private attributes, Non private methods
+> constructor overloading and method overloading
+> super keyword ( cna be used only inside class, can not access varibales/attributes, used only inside child class)
+>Types -> 1. Single | 2. Multilevel | 3. Hierarchical | 4. Mulitple <Diamond Problem> | 5. Hybrid
